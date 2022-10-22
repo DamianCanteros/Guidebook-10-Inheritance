@@ -11,6 +11,9 @@ resultado final.
  */
 package exercise_4;
 
+import exercise_4.object.Circle;
+import exercise_4.object.Rectangle;
+
 /**
  *
  * @author Damian
@@ -18,39 +21,17 @@ package exercise_4;
 public class NewMain {
 
     public static void main(String[] args) {
-
-//crea el circulo 
-    class Class implements calculationForms{
-                
-        int radius = (int)(Math.random()*100);
-
-        @Override
-        public double area(){
-
-            return PI * Math.pow(radius,2); 
-        }
-        @Override
-        public double perimeter(){
-
-            return PI * radius * 2; 
-        }
-    }
-    
-//crea el cuadrado   
-        class Class implements calculationForms{
-
-        int hight = (int)(Math.random()*100);
-        int width = (int)(Math.random()*100);
-
-        @Override
-        public double area(){
-
-            return hight * width; 
-        }
-        @Override
-        public double perimeter(){
-
-            return (hight + width) * 2; 
-        }
+        
+        Circle c1 = new Circle();
+        Rectangle r1 = new Rectangle();
+        
+        System.out.println("Circle Area: " + c1.area());
+        System.out.println("Circle Perimeter: " + c1.perimeter());
+        
+        System.out.println("__________________________");  
+        System.out.println("");  
+        
+        System.out.println("Rectangle Area: " + r1.area());
+        System.out.println("Rectangle Perimeter: " + r1.perimeter());
     }
 }

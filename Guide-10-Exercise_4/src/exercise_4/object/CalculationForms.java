@@ -3,20 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package exercise_4;
+package exercise_4.object;
 
 /**
  *
  * @author Damian
  */
-public class Class {
+public interface CalculationForms {
     
-        public interface calculationForms {
-            
-        double PI = Math.PI;
-        
-        public double area();
-        
-        public double perimeter();
-    }
+    double PI = Math.PI;
+
+    public double area();
+
+    public double perimeter();
 }
